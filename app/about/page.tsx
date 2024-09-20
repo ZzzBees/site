@@ -8,20 +8,26 @@ export default function About() {
       <div className="lg:flex lg:space-x-8">
         <div className="lg:w-2/3">
           <p className="text-lg mb-6">
-            Founded in 2023, zZz Bees began as a humble venture with two nucleus colonies from Shenandoah Bee Supply. Our journey into beekeeping has been a testament to the wonder of God's creation, leaving us in constant awe of these remarkable insects.
+            Founded in 2024, zZz Bees began after purchasing two nucleas
+            colonies from Shenandoah Bee Supply in Spring 2023. Our first
+            year was dedicated to preparing them for winter and learning about
+            beekeeping. Having successfully brought both colonies through their
+            first winter, we soon discovered the importance of swarm management,
+            and we continue to find great joy in the art and science of beekeeping.
           </p>
-          
-          <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Our Story</h2>
-          <p className="mb-6">
-            What started with two small colonies in the spring of 2023 has grown into a passion for beekeeping and a desire to share the fruits of our labor. We've discovered a profound appreciation for the intricate world of bees and their crucial role in our ecosystem. Our mission is twofold: to provide high-quality bee products to our community and to sustain our growing apiary.
+
+          <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Our Mission</h2>
+          <p className="text-lg mb-6">
+            Simple, to provide high-quality bee products to our community,
+            sustain our grwoing apiary, and do this in a way that is pleasing to
+            our Lord and Savior Jesus Christ.
           </p>
           
           <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Our Commitment</h2>
           <ul className="list-disc list-inside space-y-2 mb-6">
-            <li>Maintaining ethical and sustainable beekeeping practices</li>
+            <li>Caring for our bees to the best of our ability</li>
             <li>Producing premium, raw, and unfiltered honey</li>
             <li>Reinvesting in our apiary to expand and improve our colonies</li>
-            <li>Sharing our journey and knowledge with fellow bee enthusiasts</li>
           </ul>
           
           <p className="text-lg font-medium text-yellow-300">
