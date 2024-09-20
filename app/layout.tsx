@@ -21,11 +21,11 @@ export default function RootLayout({
         <header className="bg-white shadow-md">
           <Navbar />
         </header>
-        <main className="flex-grow container mx-auto px-4 py-8">
+        <main className="bg-black flex-grow container mx-auto px-4 py-8">
           {children}
         </main>
         <footer className="bg-black text-yellow-300 text-center py-4">
-          <p>&copy; 2024 Zzz Bees. All rights reserved.</p>
+          <p>&copy; 2024 zZz Bees. All rights reserved.</p>
         </footer>
       </body>
     </html>

@@ -8,7 +8,7 @@ export default function About() {
       <div className="lg:flex lg:space-x-8">
         <div className="lg:w-2/3">
           <p className="text-lg mb-6">
-            Founded in 2024, zZz Bees began after purchasing two nucleas
+            Founded in 2024, zZz Bees began after purchasing two nucleus
             colonies from Shenandoah Bee Supply in Spring 2023. Our first
             year was dedicated to preparing them for winter and learning about
             beekeeping. Having successfully brought both colonies through their
@@ -18,13 +18,13 @@ export default function About() {
 
           <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Our Mission</h2>
           <p className="text-lg mb-6">
-            Simple, to provide high-quality bee products to our community,
-            sustain our grwoing apiary, and do this in a way that is pleasing to
-            our Lord and Savior Jesus Christ.
+            To provide high-quality bee products to our community, sustain our
+            growing apiary, and do all this in a way that is pleasing to our
+            Lord and Savior Jesus Christ.
           </p>
           
           <h2 className="text-2xl font-semibold mb-4 text-yellow-300">Our Commitment</h2>
-          <ul className="list-disc list-inside space-y-2 mb-6">
+          <ul className="text-lg list-disc list-inside space-y-2 mb-6">
             <li>Caring for our bees to the best of our ability</li>
             <li>Producing premium, raw, and unfiltered honey</li>
             <li>Reinvesting in our apiary to expand and improve our colonies</li>
