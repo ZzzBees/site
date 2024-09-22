@@ -17,14 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <header className="bg-white shadow-md">
+      <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 min-h-screen flex flex-col`}>
+        <header className="bg-amber-400 text-black">
           <Navbar />
         </header>
-        <main className="bg-black flex-grow container mx-auto px-4 py-8">
+        <main className="flex-grow container mx-auto px-4 py-4">
           {children}
         </main>
-        <footer className="bg-black text-yellow-300 text-center py-4">
+        <footer className="bg-amber-400 text-black text-center py-2">
           <p>&copy; 2024 zZz Bees. All rights reserved.</p>
         </footer>
       </body>

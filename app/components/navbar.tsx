@@ -22,7 +22,7 @@ export default function Navbar() {
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           type="button" 
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-200"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
           aria-controls="navbar-default" 
           aria-expanded={isMenuOpen}
         >
@@ -32,11 +32,9 @@ export default function Navbar() {
           </svg>
         </button>
         <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-
-            {/* <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"></ul> */}
             <ul className="md:flex md:space-x-6">
-                <li><Link href="/about" className="text-black hover:text-yellow-600 text-lg font-bold">About Us</Link></li>
-                <li><Link href="/store" className="text-black hover:text-yellow-600 text-lg font-bold">Store</Link></li>
+                <li><Link href="/about" className="hover:text-amber-600 text-lg font-bold">About Us</Link></li>
+                <li><Link href="/store" className="hover:text-amber-600 text-lg font-bold">Store</Link></li>
             </ul>
         </div>
       </div>
