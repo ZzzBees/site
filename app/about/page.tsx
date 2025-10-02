@@ -21,9 +21,8 @@ export default function About() {
           <h2 className="text-2xl lg:text-3xl font-bold mb-4 lg:mb-6 text-center">Our Mission</h2>
 
           <p className="text-lg lg:text-xl mb-4 lg:mb-6">
-            To provide high-quality bee products to our community, sustain our
-            growing apiary, and do all this in a way that is pleasing to our
-            Lord and Savior Jesus Christ.
+            Sustaining and growing our apiary by making and selling
+            high-quality bee products in our community.
           </p>
         </div>
 
