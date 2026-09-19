@@ -19,6 +19,10 @@ netlify.toml     publish folder and redirects from the old /about and /store URL
 
 Open `site/index.html`. The words are in the body, the styles are in the `<style>` block in the head. The CSS is inlined on purpose: it saves a network round trip on every visit, which is the difference between a Lighthouse score of 99 and 100 on a slow phone.
 
+## Tooling
+
+The scripts need Node 24 or newer. With nvm, `nvm use` picks it up from `.nvmrc`.
+
 ## Adding or replacing a photo
 
 1. Drop the original JPEG into `photos/`.

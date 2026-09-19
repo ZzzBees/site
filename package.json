@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "description": "Dev-only tooling for zzzbees.com. The site itself is plain HTML and CSS in site/.",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "images": "node scripts/images.mjs",
     "test": "node scripts/check.mjs",
