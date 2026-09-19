@@ -1,0 +1,16 @@
+# zzzbees.com is a static site: no build step, publish the site/ folder as-is.
+
+[build]
+  publish = "site"
+  command = ""
+
+# Old Next.js routes. Everything lives on the one page now.
+[[redirects]]
+  from = "/about"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/store"
+  to = "/"
+  status = 301

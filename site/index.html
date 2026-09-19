@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zZz Bees — Raw honey and honeybees from Culpeper, Virginia</title>
+  <meta name="description" content="zZz Bees is a small apiary in Culpeper, Virginia. Raw, unfiltered honey at Graves Mountain Farm Market, and nucs coming in spring 2027.">
+  <link rel="canonical" href="https://zzzbees.com/">
+  <meta name="theme-color" content="#FFF040">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="zZz Bees">
+  <meta property="og:description" content="Raw local honey and honeybees from Culpeper, Virginia.">
+  <meta property="og:url" content="https://zzzbees.com/">
+  <meta property="og:image" content="https://zzzbees.com/images/BeeFrame-1000.jpg">
+
+  <link rel="preload" as="image" fetchpriority="high" type="image/avif" imagesrcset="images/BeeFrame-480.avif 480w, images/BeeFrame-800.avif 800w, images/BeeFrame-1000.avif 1000w" imagesizes="(min-width: 1216px) 512px, (min-width: 700px) 45vw, 100vw">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+/* zZz Bees — one page, one stylesheet.
+   Palette is the logo's: black, white, and yellow. Nothing else. */
+
+:root {
+  --yellow: #FFF040;
+  --black: #000;
+  --white: #fff;
+  --rule: 3px solid var(--black);
+  --gutter: clamp(20px, 5vw, 48px);
+  --max: 1120px;
+  --gap: 32px 48px;
+  --body-size: clamp(17px, 1.5vw, 20px);
+  --h2-size: clamp(30px, 4vw, 44px);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--black);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, p, figure { margin: 0; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+a {
+  color: var(--black);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--yellow);
+}
+a:hover { text-decoration-color: var(--black); }
+a:focus-visible { outline: 3px solid var(--black); outline-offset: 3px; }
+
+.wrap {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.highlight { background: linear-gradient(transparent 62%, var(--yellow) 62%); }
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: var(--body-size);
+  line-height: 1.55;
+  max-width: 62ch;
+  text-wrap: pretty;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+/* Header */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding-block: 20px;
+}
+.site-header::after {           /* rule stays inside the gutter */
+  content: "";
+  flex-basis: 100%;
+  border-bottom: var(--rule);
+  margin-top: 20px;
+}
+.logo { display: flex; text-decoration: none; }
+.logo img { width: 132px; height: auto; }
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.site-header nav a { text-decoration: none; }
+.site-header nav a:hover { text-decoration: underline; }
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--gap);
+  padding-block: 40px 56px;
+}
+.hero-text {
+  flex: 1 1 300px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.hero h1 {
+  font-size: clamp(56px, 10vw, 120px);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  font-weight: 800;
+  text-wrap: balance;
+}
+.hero-text p {
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.3;
+  font-weight: 500;
+  max-width: 22ch;
+  text-wrap: pretty;
+}
+.hero-photo {
+  flex: 1 1 300px;
+  min-width: 0;
+  position: relative;
+}
+.hero-photo::before {           /* offset yellow slab behind the photo */
+  content: "";
+  position: absolute;
+  inset: 14px 14px -12px -12px;
+  background: var(--yellow);
+}
+.hero-photo img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 45%;
+}
+
+/* Story */
+
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: flex-start;
+  padding-block: 40px 56px;
+  position: relative;
+}
+.story::before {                /* top rule inside the gutter */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--gutter);
+  right: var(--gutter);
+  border-top: var(--rule);
+}
+.story-side {
+  flex: 1 1 260px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.story-photo { max-width: 420px; }
+.story-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.story-text { flex: 2 1 320px; min-width: 0; }
+
+/* Honey: full-bleed yellow band */
+
+.honey {
+  background: var(--yellow);
+  padding-block: 40px 48px;
+}
+.honey-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  align-items: flex-start;
+}
+.honey h2 { flex: 1 1 260px; min-width: 0; }
+.honey .prose { flex: 2 1 320px; min-width: 0; gap: 16px; }
+.link-dark { text-decoration-color: var(--black); }
+.link-dark:hover { text-decoration-color: var(--white); }
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 48px;
+  align-items: flex-start;
+  padding-block: 48px 56px;
+}
+.contact h2 { flex: 1 1 260px; min-width: 0; }
+.contact-details {
+  flex: 2 1 320px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  line-height: 1.3;
+}
+.email {
+  font-size: clamp(20px, 3vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+  align-self: flex-start;
+}
+.contact-details p { font-size: var(--body-size); }
+
+/* Footer */
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  font-size: 14px;
+  padding-block: 20px 32px;
+  position: relative;
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--gutter);
+  right: var(--gutter);
+  border-top: var(--rule);
+}
+  </style>
+</head>
+<body>
+
+<header class="site-header wrap">
+  <a class="logo" href="#top">
+    <picture>
+      <source type="image/webp" srcset="images/zzzbees-264.webp 2x, images/zzzbees-396.webp 3x">
+      <img src="images/zzzbees-264.png" srcset="images/zzzbees-264.png 2x, images/zzzbees-396.png 3x" width="132" height="80" alt="zZz Bees LLC">
+    </picture>
+  </a>
+  <nav aria-label="Sections">
+    <a href="#story">Story</a>
+    <a href="#honey">Honey &amp; bees</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero wrap" id="top">
+    <div class="hero-text">
+      <h1>zZz Bees</h1>
+      <p>Raw local honey and honeybees from Culpeper, Virginia.</p>
+    </div>
+    <figure class="hero-photo">
+      <picture>
+        <source type="image/avif" srcset="images/BeeFrame-480.avif 480w, images/BeeFrame-800.avif 800w, images/BeeFrame-1000.avif 1000w" sizes="(min-width: 1216px) 512px, (min-width: 700px) 45vw, 100vw">
+        <source type="image/webp" srcset="images/BeeFrame-480.webp 480w, images/BeeFrame-800.webp 800w, images/BeeFrame-1000.webp 1000w" sizes="(min-width: 1216px) 512px, (min-width: 700px) 45vw, 100vw">
+        <img src="images/BeeFrame-800.jpg" srcset="images/BeeFrame-480.jpg 480w, images/BeeFrame-800.jpg 800w, images/BeeFrame-1000.jpg 1000w" sizes="(min-width: 1216px) 512px, (min-width: 700px) 45vw, 100vw" width="1200" height="1600" fetchpriority="high" alt="A hive frame held up over the grass, covered in bees">
+      </picture>
+    </figure>
+  </section>
+
+  <section class="story wrap" id="story">
+    <div class="story-side">
+      <h2><span class="highlight">Our story</span></h2>
+      <figure class="story-photo">
+        <picture>
+          <source type="image/avif" srcset="images/BeeInspection-480.avif 480w, images/BeeInspection-800.avif 800w" sizes="(min-width: 700px) 420px, 100vw">
+          <source type="image/webp" srcset="images/BeeInspection-480.webp 480w, images/BeeInspection-800.webp 800w" sizes="(min-width: 700px) 420px, 100vw">
+          <img src="images/BeeInspection-800.jpg" srcset="images/BeeInspection-480.jpg 480w, images/BeeInspection-800.jpg 800w" sizes="(min-width: 700px) 420px, 100vw" width="1200" height="1600" loading="lazy" decoding="async" fetchpriority="low" alt="An adult and a child in bee suits inspecting two open hives, the near one hand-painted with cartoon bees and zZz Bees">
+        </picture>
+      </figure>
+    </div>
+    <div class="story-text prose">
+      <p>zZz Bees started in the spring of 2023 with two nucleus colonies from Shenandoah Bee Supply and a first season spent learning how to get them ready for winter. Both colonies made it through, and 2024 taught us about swarm management, mostly the hard way.</p>
+      <p>In 2025 we doubled to eleven colonies going into winter. It was also our first try at rearing our own queens, which failed, so we bought queens and made splits instead and learned a lot doing it. All eleven came through the winter. Today we run around 25 hives, plus five or six young nucs headed by queens we raised ourselves, and we're working to bring them through this winter.</p>
+      <p>Our aim is simple: care for our bees as well as we can, produce raw, unfiltered honey, and put what we earn back into the apiary.</p>
+    </div>
+  </section>
+
+  <section class="honey" id="honey">
+    <div class="wrap honey-inner">
+      <h2>Honey and bees</h2>
+      <div class="prose">
+        <p>Find our honey at Graves Mountain Farm Market in Syria, Virginia.</p>
+        <p>We're raising nucs for our first spring sales in 2027. <a class="link-dark" href="mailto:zzzbeesva@gmail.com">Email us</a> if you'd like to hear when they're ready.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact wrap" id="contact">
+    <h2><span class="highlight">Contact</span></h2>
+    <div class="contact-details">
+      <a class="email" href="mailto:zzzbeesva@gmail.com">zzzbeesva@gmail.com</a>
+      <p>Culpeper, Virginia</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>&copy; 2026 zZz Bees LLC</p>
+  <p>Culpeper, Virginia</p>
+</footer>
+
+</body>
+</html>

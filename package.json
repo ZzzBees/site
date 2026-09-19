@@ -1,28 +1,16 @@
 {
   "name": "zzzbees",
-  "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "description": "Dev-only tooling for zzzbees.com. The site itself is plain HTML and CSS in site/.",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@netlify/plugin-nextjs": "^5.6.0",
-    "next": "^14.2.15",
-    "react": "^18",
-    "react-dom": "^18",
-    "sharp": "^0.33.5"
+    "images": "node scripts/images.mjs",
+    "test": "node scripts/check.mjs",
+    "serve": "python3 -m http.server 8000 --directory site"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.2.1",
+    "sharp": "^0.33.5"
   }
 }
